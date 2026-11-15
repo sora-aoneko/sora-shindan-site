@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>診断をはじめる｜そら｜青い猫の占い</title>
+<link rel="icon" href="assets/sora-sm.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://yutaroserizawa-dev.github.io/sora-shindan-site/shindan.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="そら｜青い猫の占い">
+<meta property="og:title" content="診断をはじめる｜そら｜青い猫の占い">
+<meta property="og:description" content="お名前・生年月日・気になっていることを入れるだけの、約1分の無料診断です。">
+<meta property="og:url" content="https://yutaroserizawa-dev.github.io/sora-shindan-site/shindan.html">
+<meta property="og:image" content="https://yutaroserizawa-dev.github.io/sora-shindan-site/assets/sora-sm.png">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/sora-sm.png" alt=""><span>そら｜青い猫の占い</span></a>
+</div></header>
+<main class="wrap narrow">
+  <section class="q-card">
+    <div class="qno">入力は3つだけ</div>
+    <h1>お名前・生年月日・気になっていること</h1>
+    <p class="hint">入力すると、すぐに結果が表示されます。入力した内容は、この画面の中だけで使い、外部には送信しません。</p>
+    <form id="form" novalidate>
+      <div class="field">
+        <label for="name">お名前（ニックネーム可）<span class="req">必須</span></label>
+        <input type="text" id="name" name="name" autocomplete="nickname" maxlength="20" aria-describedby="name-err">
+        <div class="err" id="name-err" role="alert"></div>
+      </div>
+      <div class="field">
+        <label for="birthday">生年月日<span class="req">必須</span></label>
+        <input type="date" id="birthday" name="birthday" min="1950-01-01" max="2015-12-31" aria-describedby="birth-err birth-hint">
+        <div class="note" id="birth-hint">1950〜2015年生まれの方に対応しています。</div>
+        <div class="err" id="birth-err" role="alert"></div>
+      </div>
+      <fieldset class="field themes" aria-describedby="theme-err">
+        <legend>いま気になっていること<span class="req">必須</span></legend>
+        <div class="opts grid2" id="themes"></div>
+        <div class="err" id="theme-err" role="alert"></div>
+      </fieldset>
+      <button type="submit" class="btn" id="submit">結果を見る</button>
+      <p class="center mt"><a href="index.html">← 戻る</a></p>
+    </form>
+  </section>
+</main>
+<footer class="site-foot"><div class="wrap"><div class="links"><a href="privacy.html">プライバシーポリシー</a></div></div></footer>
+<script src="data/ingress.js"></script>
+<script src="data/texts.js"></script>
+<script src="common.js"></script>
+<script src="config.js"></script>
+<script src="shindan.js"></script>
+</body>
+</html>
