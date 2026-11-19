@@ -8,6 +8,6 @@
   function makeCode(signIndex, theme) {
     return 'S' + ('0' + (signIndex + 1)).slice(-2) + '-' + THEME_CODE[theme];
   }
-  var SITE_ORIGIN = 'https://yutaroserizawa-dev.github.io/sora-shindan-site';
+  var SITE_ORIGIN = 'https://sora-aoneko.github.io/sora-shindan-site';
   window.SORA_CONFIG = { LINE_URL: LINE_URL, SITE_ORIGIN: SITE_ORIGIN, THEME_CODE: THEME_CODE, makeCode: makeCode };
 })();
