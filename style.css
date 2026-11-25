@@ -164,3 +164,19 @@ fieldset.field legend{display:block;font-weight:700;margin-bottom:6px;color:var(
 .btn.line{background:#067a37;color:#fff;box-shadow:0 3px 0 #04582a}
 .line-card .check b{color:var(--navy)}
 .hero .what{max-width:520px;margin:6px auto 14px;font-size:16px;line-height:1.9;text-align:left;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);border-radius:16px;padding:12px 16px}
+
+/* シェア */
+.share-card .note.center{text-align:center}
+.share-img{margin:12px 0}
+.share-img img{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 4px 14px rgba(3,14,50,.25)}
+.share-text{background:var(--mist);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:14px;line-height:1.75;word-break:break-all;overflow-wrap:anywhere}
+.share-cmp{list-style:none;margin:12px 0;padding:0;font-size:14px;color:var(--muted)}
+.share-cmp li{padding:6px 0 6px 20px;position:relative;line-height:1.7}
+.share-cmp li::before{content:"🐾";position:absolute;left:0;top:6px;font-size:12px}
+.share-cmp b{color:var(--navy)}
+.share-btns{display:grid;gap:10px;margin-top:14px}
+.share-btns .btn{min-height:52px;font-size:16px}
+.btn.share-th,.btn.share-x{background:#111;color:#fff;box-shadow:0 3px 0 #000}
+.btn.share-th:focus-visible,.btn.share-x:focus-visible{outline:3px solid #7db4ff;outline-offset:2px}
+@media(min-width:600px){.share-btns{grid-template-columns:1fr 1fr}.share-btns .btn{max-width:none;margin:0}}
+.share-card #share-status{margin-top:10px;min-height:1.7em}

@@ -36,7 +36,10 @@
     '<button type="button" class="btn sub" id="copy">コードをコピーする</button>' +
     '<div class="note" id="copied" role="status" aria-live="polite"></div></div>' +
     '<a class="btn line" id="line-btn" href="' + esc(C.LINE_URL) + '" target="_blank" rel="noopener">公式LINEで詳しい結果を受け取る</a>' +
-    '</section>';
+    '</section>' +
+    (window.SoraShare ? window.SoraShare.html(st) : '');
+
+  if (window.SoraShare) window.SoraShare.init(st);
 
   document.getElementById('copy').addEventListener('click', function () {
     var done = function (ok) { document.getElementById('copied').textContent = ok ? 'コピーしました。' : 'コピーできませんでした。コードを長押しして選んでください。'; };
